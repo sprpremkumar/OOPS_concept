@@ -1,4 +1,4 @@
-"""class personaldetails:
+class personaldetails:
     def __init__(self,name,rollno):
         self.name=name
         self.__rollno=rollno
@@ -11,17 +11,17 @@ class derived(personaldetails):
         personaldetails.__init__(self,name,rollno)
 
     def accesstheprivate(self):
-        self._personaldetails__displaytheprivate()
+        self._personaldetails__displaytheprivate() """I have accessed the private method in derived class using Name mangling technique"""
 
 name=input("Enter ur name : ")
 rollno=input("Enter the roll no : ")
 key=derived(name,rollno)
 
-key.accesstheprivate()"""
+key.accesstheprivate()
 
 """object can not access private member, so it will generate Attribute error"""
 """AttributeError: 'derived' object has no attribute '_derived__displaytheprotected'"""
-
+"""
 class personal:
     def __init__(self,name,rollno,dept):
         self.name=name
@@ -51,3 +51,4 @@ key=derive(name,rollno,dept)
 key.public()
 key.accessprotect()
 key.accessprivate()
+"""
