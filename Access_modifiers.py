@@ -38,7 +38,7 @@ class personal:
 
 class derive(personal):
     def __init__(self,name,rollno,dept):
-        personal.__init__(self,name,rollno,dept)
+        super().__init__(name,rollno,dept)
 
     def accessprotect(self):
         self._protect()
