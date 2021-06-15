@@ -11,7 +11,7 @@ class derived(personaldetails):
         personaldetails.__init__(self,name,rollno)
 
     def accesstheprivate(self):
-        self.__displaytheprivate()
+        self._personaldetails__displaytheprivate()
 
 name=input("Enter ur name : ")
 rollno=input("Enter the roll no : ")
