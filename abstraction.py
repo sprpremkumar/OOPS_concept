@@ -14,7 +14,6 @@ class benz():
         trans.mode()
         print("Benz A class ---> 15.5 km/l ")
 
-
 T=transport()
 # T.mode()  o/p : Mode of Transport --> Road
 B=benz()
